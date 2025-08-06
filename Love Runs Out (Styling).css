@@ -1,0 +1,214 @@
+body{background-attachment: fixed}
+
+#bg-video {
+    display: none; /* Hidden by default, made visible by JS */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover; /* This makes the video cover the screen without stretching */
+    z-index: -1; /* This places the video behind all other content */
+    cursor: pointer; /* Indicates the video is clickable to play/pause */
+}
+
+h1 {
+    font-family: Ink Free;
+    text-decoration: underline;
+    text-decoration-color: Orangered;
+    /* Added to set a specific thickness for the text underline */
+    text-decoration-thickness: 3px;
+  }
+
+h3 {
+    color: YellowGreen;
+    font-family: Lucida Calligraphy;
+    font-size: 30px;
+    text-decoration: Underline;
+    text-decoration-color: paleturquoise;
+    padding: 20px;
+    border-radius: 10px
+}
+
+h4{
+    color:Burlywood;
+    font-family: Lucida Handwriting;
+    font-size: 30px;
+    text-decoration: Solid underline;
+    text-decoration-color: BlanchedAlmond
+}
+
+audio {
+    border: 5px;
+    border-style: ridge ;
+    border-color: #FF5733;
+    padding: 10px;
+    background: linear-gradient(135deg, #FFD700, #00FF00, #FF1493, #00FFFF, #800080)
+}
+
+a {
+    background: linear-gradient(45deg, #0D0D0D, #1F1F1F);
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.Hymn{color:Hotpink}
+
+.Forever{color:Crimson}
+
+.Always{color:Yellow}
+
+.Viva{color:Blueviolet}
+
+.Lyrics {
+    color: #1F1F1F;
+    font-family: Harrington;
+    text-decoration: Solid Underline;
+    text-decoration-color: Lime;
+    background: linear-gradient(to bottom, #FF5733, #FFD700, #33FF57, #33A0FF)
+}
+
+.Apollo{
+    color: RoyalBlue;
+    font-family: Ink Free;
+    text-decoration: Wavy underline;
+    text-decoration-color:Orange
+}
+
+.One{
+    color:Black;
+    background: linear-gradient(135deg, #F56A68, #61A8FF);
+    font-family: Ink Free
+}
+
+.in{
+    color:Darkturquoise;
+    font-family: Harlow Solid;
+    font-size: 30px ;
+    text-decoration: Wavy underline;
+    text-decoration-color:Bisque
+}
+
+.Clocks{
+    color:RoyalBlue;
+    font-family: Magneto;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.Republic{
+    color:FloralWhite;
+    font-family: Harrington ; font-size: 22px;
+    text-decoration: none
+}
+
+.OneRepublic{
+    color:Springgreen;
+    font-family: Algerian
+}
+
+.Politik{
+    color:Gold;
+    font-family: Algerian;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.Sky{
+    color:Blueviolet;
+    font-family: Gabriola;
+    font-size: 30px;
+    text-decoration: none
+}
+
+.Stars{
+    color:Palegreen;
+    font-family: Edwardian Script ITC;
+    font-size: 30px;
+    text-decoration: none
+}
+
+.Universe{
+    color:Ivory;
+    font-family: Monotype Corsiva;
+    font-size: 30px;
+    text-decoration: none
+}
+
+.Mathematics{
+    color: Tomato;
+    font-family: Harlow Solid;
+    font-size: 30px;
+    text-decoration: none
+}
+
+.Insta{
+    color:Antiquewhite;
+    background: linear-gradient(135deg, #833AB4, #C13584, #FD1D1D, #F56040, #FFDC80);
+    background-clip: text;
+    font-family: Gabriola
+}
+
+.Face{
+    background:Deepskyblue;
+    border-radius: 20px;
+    color:White;
+    font-family: Edwardian Script ITC}
+
+.Tweet{
+    background:Ghostwhite;
+    border-radius: 20px;
+    color:Cyan;
+    font-family: Monotype Corsiva
+}
+
+.Sleep{
+    background:Black;
+    color:Beige;
+    font-family: Ink Free
+}
+
+/* Sets the underline for the logo in the H1 tag */
+.logo-image-h1 {
+    border-bottom: 3px solid Orangered;
+    vertical-align: middle;
+  }
+  
+  /* Sets the underline for the logo in the H3 tag */
+  .logo-image-h3 {
+    border-bottom: 3px solid paleturquoise;
+    vertical-align: middle;
+  }
+  
+  /* Sets the underline for the logo in the H4 tag */
+  .logo-image-h4 {
+    border-bottom: 3px solid BlanchedAlmond;
+    vertical-align: middle;
+  }
+
+/* This new wrapper class styles the informational links row */
+.info-links-wrapper,
+.social-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px; /* Controls the space between logos */
+  margin-top: 15px;
+  margin-bottom: 15px; /* Added for better spacing */
+}
+
+/* This combined class styles all logos (both image-based and SVG-based) */
+.info-logo,
+.social-logo-only {
+  width: 35px;
+  height: 35px;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  fill: white; /* This will color the inline SVGs white */
+}
+
+/* This combined class handles the hover effect for all logos */
+.info-logo:hover,
+.social-logo-only:hover {
+  transform: scale(1.1); /* Makes the logo slightly larger on hover */
+  opacity: 0.8; /* Fades the logo slightly on hover */
+}
